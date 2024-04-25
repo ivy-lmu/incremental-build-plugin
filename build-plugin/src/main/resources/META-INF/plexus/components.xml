@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-set>
+  <components>
+    <component>
+      <role>org.apache.maven.lifecycle.mapping.LifecycleMapping</role>
+      <role-hint>iar</role-hint>
+      <implementation>
+        org.apache.maven.lifecycle.mapping.DefaultLifecycleMapping
+      </implementation>
+      <configuration>
+        <phases>
+          <generate-sources>
+            com.axonivy.ivy.ci:project-build-plugin-slim:build-data-class
+          </generate-sources>
+          <package>
+            com.axonivy.ivy.ci:project-build-plugin-slim:pack-iar
+          </package>
+        </phases>
+      </configuration>
+    </component>
+  </components>
+</component-set>
