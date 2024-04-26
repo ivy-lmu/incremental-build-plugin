@@ -1,4 +1,5 @@
 This repo is used to reproduce an incremental m2e build problem in VS Code using the Extension Pack for Java.
+Reported with https://github.com/redhat-developer/vscode-java/issues/3632
 
 # Goal
 With the help of our maven plugin (see `/build-plugin`) we want to incrementally convert `*.ivyClass` files into `*.java` files. The resulting java files will be written into `src_dataClasses` folder. So if an `*.ivyClass` file is created or changed, the plugin is expected to write/update the corresponding `*.java` file.
