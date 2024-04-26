@@ -1,6 +1,7 @@
 {
   "name": "Axon Ivy Dev Container",
   "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+  "postStartCommand": "mvn -f build-plugin install",
   "features": {
     "ghcr.io/devcontainers/features/java:1": {
       "version": "17",
@@ -10,7 +11,10 @@
   },
   "customizations": {
     "vscode": {
-      "extensions": ["vscjava.vscode-java-pack"]
+      "extensions": ["vscjava.vscode-java-pack"],
+      "settings": {
+        "java.server.launchMode": "Standard"
+      }
     }
   }
 }

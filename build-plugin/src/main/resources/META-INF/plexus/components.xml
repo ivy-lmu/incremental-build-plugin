@@ -10,11 +10,8 @@
       <configuration>
         <phases>
           <generate-sources>
-            com.axonivy.ivy.ci:project-build-plugin-slim:build-data-class
+            com.ivyteam.incremental.build:build-plugin:build-data-class
           </generate-sources>
-          <package>
-            com.axonivy.ivy.ci:project-build-plugin-slim:pack-iar
-          </package>
         </phases>
       </configuration>
     </component>
